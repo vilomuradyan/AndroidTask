@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="item_posts_layout_padding">8dp</dimen>
+    <dimen name="item_circle_image_padding">12dp</dimen>
+    <dimen name="item_text_profile_name_padding_top">12dp</dimen>
+    <dimen name="item_text_profile_name_padding_bottom">4dp</dimen>
+    <dimen name="item_text_profile_name_text_size">16sp</dimen>
+    <dimen name="item_circle_image_width_and_height">96dp</dimen>
+    <dimen name="item_circle_image_border_width">1dp</dimen>
+    <dimen name="item_image_arrow_down_margin_end">12dp</dimen>
+    <dimen name="item_text_message_padding_start_and_end">12dp</dimen>
+    <dimen name="item_image_posts_margin_start_and_end">12dp</dimen>
+    <dimen name="item_image_posts_padding">12dp</dimen>
+    <dimen name="item_view_margin_start_and_end">12dp</dimen>
+    <dimen name="item_view_layout_height">1dp</dimen>
+    <dimen name="item_layout_comment_padding">12dp</dimen>
+</resources>

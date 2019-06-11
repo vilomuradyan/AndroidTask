@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/item_posts_layout_padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:background="@drawable/selector_rounded_button_stroke_grey"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="@dimen/item_circle_image_padding"
+                    android:id="@+id/image_profile"
+                    android:layout_width="@dimen/item_circle_image_width_and_height"
+                    android:layout_height="@dimen/item_circle_image_width_and_height"
+                    android:src="@drawable/ic_launcher_background"
+                    app:civ_border_width="@dimen/item_circle_image_border_width"
+                    app:civ_border_color="@color/item_circle_image_border_color"/>
+
+            <TextView
+                    android:paddingTop="@dimen/item_text_profile_name_padding_top"
+                    android:paddingBottom="@dimen/item_text_profile_name_padding_bottom"
+                    android:text="damien R."
+                    android:textSize="@dimen/item_text_profile_name_text_size"
+                    android:textColor="@android:color/black"
+                    android:layout_toEndOf="@id/image_profile"
+                    android:id="@+id/text_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="Sep 23,2016 2:52 PM"
+                    android:layout_below="@id/text_profile_name"
+                    android:layout_toEndOf="@id/image_profile"
+                    android:id="@+id/text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:tint="@android:color/holo_blue_dark"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_marginEnd="@dimen/item_image_arrow_down_margin_end"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:textColor="@android:color/black"
+                android:paddingEnd="@dimen/item_text_message_padding_start_and_end"
+                android:paddingStart="@dimen/item_text_message_padding_start_and_end"
+                android:text="test"
+                android:id="@+id/text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:id="@+id/image_posts"
+                android:layout_marginEnd="@dimen/item_image_posts_margin_start_and_end"
+                android:layout_marginStart="@dimen/item_image_posts_margin_start_and_end"
+                android:src="@drawable/ic_launcher_foreground"
+                android:padding="@dimen/item_image_posts_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:layout_marginStart="@dimen/item_view_margin_start_and_end"
+                android:layout_marginEnd="@dimen/item_view_margin_start_and_end"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_view_layout_height"/>
+
+        <RelativeLayout
+                android:padding="@dimen/item_layout_comment_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:tint="@android:color/holo_blue_dark"
+                    android:src="@drawable/ic_message"
+                    android:id="@+id/image_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_marginStart="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_toEndOf="@id/image_message"
+                    android:text="Comment"
+                    android:id="@+id/text_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@android:color/holo_blue_dark"
+                    android:drawableStart="@drawable/ic_eye"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_toStartOf="@id/text_views_count"
+                    android:text="Views: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/text_views_count"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_alignParentEnd="true"
+                    android:text="1/2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
